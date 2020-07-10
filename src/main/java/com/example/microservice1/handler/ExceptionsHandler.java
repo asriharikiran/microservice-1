@@ -1,4 +1,4 @@
-package com.example.microservice1.controlleradviceexample;
+package com.example.microservice1.handler;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -9,7 +9,7 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 @ControllerAdvice
-public class ExceptionHandlingController extends ResponseEntityExceptionHandler {
+public class ExceptionsHandler extends ResponseEntityExceptionHandler {
     @ExceptionHandler(value
             = { ArithmeticException.class, IllegalStateException.class })
     protected ResponseEntity<Object> handleConflict(
