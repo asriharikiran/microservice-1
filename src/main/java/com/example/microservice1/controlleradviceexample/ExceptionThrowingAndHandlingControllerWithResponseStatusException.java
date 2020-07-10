@@ -2,8 +2,10 @@ package com.example.microservice1.controlleradviceexample;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
+@RestController
 public class ExceptionThrowingAndHandlingControllerWithResponseStatusException {
 
     @GetMapping(value = "/exception3")
