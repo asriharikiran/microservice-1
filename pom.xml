@@ -26,6 +26,12 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<!--Below Dependency is to add the monitoring capability to the app, gathering metrics, understanding traffic etc. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 			<version>2.3.1.RELEASE</version>
 		</dependency>
