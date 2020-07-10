@@ -24,6 +24,13 @@
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
+		<!--To add security, and also this is mandatory to enable all/custom set of actuator endpoints (info and health being the default which doesn't need this)-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<!--Below Dependency is to add the monitoring capability to the app, gathering metrics, understanding traffic etc. -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
